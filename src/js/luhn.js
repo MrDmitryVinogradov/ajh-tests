@@ -1,16 +1,16 @@
 export default function luhn(value) {
-  value = value.replace(/\D/g, '');
-  if (value.length < 15 || value.length > 19) {
+  const replacedValue = value.replace(/\D/g, '');
+  if (replacedValue.length < 15 || replacedValue.length > 19) {
     return false;
   }
 
   let nCheck = 0;
   let bEven = false;
 
-  for (let n = value.length - 1; n >= 0; n -= 1) {
-    let nDigit = parseInt(value.charAt(n), 10);
+  for (let n = replacedValue.length - 1; n >= 0; n -= 1) {
+    let nDigit = parseInt(replacedValue.charAt(n), 10);
 
-    if (bEven && (nDigit *= 2) > 9) {
+    if (bEven && (nDigit * 2) > 9) {
       nDigit -= 9;
     }
 
