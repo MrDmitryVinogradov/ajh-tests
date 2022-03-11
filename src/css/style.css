@@ -1,0 +1,112 @@
+body {
+  background-color: aliceblue;
+}
+
+.validation-form {
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+li {
+  list-style-type: none;
+  display: block;
+}
+
+.cards {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin-bottom: 10px;
+  margin-left: 0;
+}
+
+.card {
+  position: relative;
+  display: block;
+  width: 43px;
+  height: 27px;
+  background-size: contain;
+}
+
+.card-inactive {
+  opacity: 30%;
+}
+
+.visa {
+  background-image: url(../img/visa_straight.png);
+}
+
+
+.master {
+  background-image: url(../img/mastercard_straight.png);
+}
+
+.amex {
+  background-image: url(../img/american_express_straight.png);
+}
+
+.discover {
+  background-image: url(../img/discover_straight_64px.png);
+}
+
+.jcb {
+  background-image: url(../img/jcb.png);
+}
+
+.mir {
+  background-image: url(../img/mir.png);
+}
+
+.form-control {
+  height: 24px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.btn {
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  color: #fff;
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+}
+
+.btn:active {
+  background-color: #186e18;
+}
+
+.btn:hover {
+  background-color: rgb(48, 167, 48);
+}
+
+.invalid-message {
+  color: red;
+  font-size: 16;
+  font-weight: bold;
+}
+
+.valid-message {
+  color: green;
+  font-size: 16;
+  font-weight: bold;
+}
