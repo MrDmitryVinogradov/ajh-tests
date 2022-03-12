@@ -15,7 +15,7 @@ export default function paymentSystem(value) {
     return 'discover';
   }
   if (substr4 > 3527 && substr4 < 3590) {
-    return 'jsb';
+    return 'jcb';
   }
   if (substr4 > 2199 && substr4 < 2205) {
     return 'mir';
